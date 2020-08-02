@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2ec194;
+}
+.container {
+    position: relative;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .box {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 40px 0;
+    background: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.container  .box.boxshadow1{
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+    /* background-color: rosybrown; */
+}
+.container  .box.boxshadow2:before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 90%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    transform-origin: left;
+    transform: skewY(5deg);
+    z-index: -1;
+    filter: blur(5px);
+    /* background-color: rosybrown; */
+}
+
+.container  .box.boxshadow3:before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 90%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    transform-origin: left;
+    transform: skewY(5deg);
+    z-index: -1;
+    filter: blur(5px);
+    /* background-color: rosybrown; */
+}
+.container  .box.boxshadow3:after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    width: 90%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    transform-origin: right;
+    transform: skewY(-5deg);
+    z-index: -1;
+    filter: blur(5px);
+    /* background-color: rosybrown; */
+}
+.container  .box.boxshadow4:before{
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    filter: blur(5px);
+    border-radius: 50%;
+    /* background-color: rosybrown; */
+}
+.container  .boxshadow5:before{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    filter: blur(10px);
+
+    /* background-color: rosybrown; */
+}
+.container  .boxshadow6{
+    background: #2ec194;
+    border-radius: 20px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5),
+                15px 15px 15px rgba(0, 0, 0, 0.5);
+
+    /* background-color: rosybrown; */
+}
+.container  .boxshadow7{
+    background: #2ec194;
+    border-radius: 20px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5),
+                15px 15px 15px rgba(0, 0, 0, 0.5),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+    /* background-color: rosybrown; */
+}
