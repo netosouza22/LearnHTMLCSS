@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #E04239;
+  
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    margin: 20px;
+}
+.container .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* background: #fc6a62;  */
+    background: #272727;
+}
+.container .imgBx::after{
+    content: 'HPM';
+    color: rgb(224, 47, 47);
+    /* opacity: 0.2; */
+    position: absolute;
+    bottom: 50px;
+    right: -100px;
+    transform: rotate(270deg);
+    font-size: 8em;
+    font-weight: 800;
+    opacity: 0.3;
+}
+.container .imgBx::before{
+    content: 'NIKE';
+    color: rgb(224, 47, 47);
+    /* opacity: 0.2; */
+    position: absolute;
+    top: 80px;
+    left: -100px;
+    transform: rotate(270deg);
+    font-size: 8em;
+    font-weight: 800;
+    opacity: 0.3;
+}
+.container .imgBx img{
+    position: absolute;
+   
+    transform: rotate(-30deg);
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+
+.container .details{
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.container .content h2{
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #444;
+}
+.container .content h2 span{
+    font-size: 0.4em;
+    line-height: 0.4em;
+    color: rgb(133, 121, 121);
+    text-transform: uppercase;
+}
+
+.container .content p {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.container .content h3 {
+    color: rgb(125, 149, 255);
+    font-size: 2.0em;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.container .content button{
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fa3b31;
+    font-size: 1.2em;
+    font-weight: 900;
+    box-shadow: none;
+    cursor: pointer;
+    float: right;
+}
+.container .content button:hover{
+    /* position: absolute; */
+    /* right: 5%; */
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+@media(max-width: 1080px){
+    .container{
+        height: auto;
+    }
+    .container .imgBx {
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: 300px;
+        text-align: center;
+        /* overflow: hidden; */
+    }
+    .container .imgBx img{
+        left: initial;
+        transform: rotate(0);
+        max-width: 100%;
+        top: 0px;
+    }
+    .details {
+        width: 100% !important;
+        height: auto;
+        padding: 10px;
+    }
+
+
+}
