@@ -23,6 +23,7 @@ section .content h2{
     font-weight: 900;
     line-height: 1em;
     -webkit-background-clip: text;
+    /* background-clip: initial; */
     -webkit-text-fill-color: transparent;
 }
 section:nth-child(1) .content h2{
